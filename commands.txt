@@ -1,0 +1,11 @@
+Run the script in a python command line.
+
+1. Open a command line.
+2. Go to the path directory in TrackEval.
+3. Put the model folder in "TrackEval/"
+4. Change the name of the model folder to "data"
+3. Example to run the evaluation, change the NAME_OF_THE_MODEL with the name of the model:
+python ./scripts/run_mot_challenge.py --BENCHMARK MOT15 --SPLIT_TO_EVAL all --TRACKERS_TO_EVAL [NAME_OF_THE_MODEL] --METRICS HOTA CLEAR Identity VACE --USE_PARALLEL False --NUM_PARALLEL_CORES 1
+
+Example of the command:
+python ./scripts/run_mot_challenge.py --BENCHMARK MOT15 --SPLIT_TO_EVAL all --TRACKERS_TO_EVAL [llama-3.3-70b-instruct] --METRICS HOTA CLEAR Identity VACE --USE_PARALLEL False --NUM_PARALLEL_CORES 1
